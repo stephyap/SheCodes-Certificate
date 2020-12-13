@@ -1,0 +1,73 @@
+body {
+  background-color: white;
+}
+
+h1 {
+  font-size: 20px;
+}
+
+h2 {
+  font-size: 15px;
+}
+
+h3 {
+  font-size: 15px;
+}
+p {
+  margin: 0px;
+}
+
+img {
+  width: 5em;
+}
+
+.temperature-text {
+  display: inline-block;
+}
+
+ul {
+  margin: 0 0 10px;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+.container {
+  max-width: 700px;
+}
+.weather-app-wrapper {
+  border: 3px solid black;
+  border-radius: 10px;
+  background-color: #bdcfd2;
+  margin: 50px 0px auto;
+  max-width: 750px;
+}
+
+.search-form {
+  margin: 20px;
+}
+.location-overview {
+  margin: 20px;
+}
+
+.weather-overview {
+  padding: 20px;
+}
+
+.weather-overview .active {
+  color: black;
+  cursor: default;
+}
+
+.weather-overview .active:hover {
+  text-decoration: none;
+}
+
+.forecast-icon {
+  width: 55%;
+}
+
+.forecast-container {
+  margin: 20px;
+}

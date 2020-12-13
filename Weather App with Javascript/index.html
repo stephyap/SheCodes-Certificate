@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="src/styles.css" />
+    <title>Weather App</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="weather-app-wrapper">
+        <form class="search-form" id="search-form">
+          <div class="row">
+            <div class="col-6">
+              <input
+                type="search"
+                placeholder="Type a city.."
+                autofocus="on"
+                autocomplete="off"
+                id="city-input"
+                class="form-control shadow-sm"
+              />
+            </div>
+            <div class="col-3">
+              <input
+                type="submit"
+                value="Search"
+                class="form-control btn btn-warning shadow-sm w-100"
+              />
+            </div>
+            <div class="col-3">
+              <button class="btn btn-light w-100" id="current-location-button">
+                Current
+              </button>
+            </div>
+          </div>
+        </form>
+        <div class="location-overview">
+          <h1 id="city"></h1>
+          <h2 id="date"></h2>
+          <h2 id="description"></h2>
+        </div>
+        <div class="row weather-overview">
+          <div class="col-sm">
+            <img
+              src="https://ssl.gstatic.com/onebox/weather/64/sunny_s_cloudy.png"
+              alt="cloudy"
+              id="icon"
+            />
+            <p class="temperature-text">
+              <span id="temperature"></span>
+              <a href="" id="celsius" class="active">°C</a> |
+              <a href="" id="fahrenheit">°F </a>
+            </p>
+          </div>
+          <div class="col-sm">
+            <ul>
+              <li>Humidity: <span id="humidity"></span>%</li>
+              <li>Wind: <span id="wind"></span> km/h</li>
+            </ul>
+            <!-- <div class="btn-group btn-group-toggle" data-toggle="buttons">
+              <label class="btn btn-secondary active">
+                <input
+                  type="radio"
+                  name="options"
+                  id="option1"
+                  autocomplete="off"
+                  checked
+                />
+                Temperature
+              </label>
+              <label class="btn btn-secondary">
+                <input
+                  type="radio"
+                  name="options"
+                  id="option2"
+                  autocomplete="off"
+                />
+                Precipitation
+              </label>
+              <label class="btn btn-secondary">
+                <input
+                  type="radio"
+                  name="options"
+                  id="option3"
+                  autocomplete="off"
+                />
+                Wind
+              </label>
+            </div> -->
+          </div>
+        </div>
+
+        <!-- FORECAST SECTION -->
+
+        <div class="container forecast-container">
+          <div class="row" id="forecast">
+            <!-- CONTENT IN JAVASCRIPT FILE -->
+          </div>
+        </div>
+      </div>
+      <small><a href="">Open source coded</a> by Chiu Feng (Steph)</small>
+    </div>
+  </body>
+
+  <script src="src/index.js"></script>
+</html>
